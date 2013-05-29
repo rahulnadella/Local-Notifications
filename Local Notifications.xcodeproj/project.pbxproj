@@ -21,6 +21,7 @@
 		FCA0FF3D1756922F0076D71B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA0FF1E1756922F0076D71B /* Foundation.framework */; };
 		FCA0FF451756922F0076D71B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCA0FF431756922F0076D71B /* InfoPlist.strings */; };
 		FCA0FF481756922F0076D71B /* Local_NotificationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA0FF471756922F0076D71B /* Local_NotificationsTests.m */; };
+		FCA0FF53175692750076D71B /* NSLocalNotificationsScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA0FF52175692750076D71B /* NSLocalNotificationsScheduler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		FCA0FF441756922F0076D71B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FCA0FF461756922F0076D71B /* Local_NotificationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Local_NotificationsTests.h; sourceTree = "<group>"; };
 		FCA0FF471756922F0076D71B /* Local_NotificationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Local_NotificationsTests.m; sourceTree = "<group>"; };
+		FCA0FF51175692750076D71B /* NSLocalNotificationsScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLocalNotificationsScheduler.h; sourceTree = "<group>"; };
+		FCA0FF52175692750076D71B /* NSLocalNotificationsScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLocalNotificationsScheduler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +115,8 @@
 		FCA0FF221756922F0076D71B /* Local Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				FCA0FF2B1756922F0076D71B /* AppDelegate.h */,
-				FCA0FF2C1756922F0076D71B /* AppDelegate.m */,
+				FCA0FF51175692750076D71B /* NSLocalNotificationsScheduler.h */,
+				FCA0FF52175692750076D71B /* NSLocalNotificationsScheduler.m */,
 				FCA0FF231756922F0076D71B /* Supporting Files */,
 			);
 			path = "Local Notifications";
@@ -122,13 +125,15 @@
 		FCA0FF231756922F0076D71B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FCA0FF241756922F0076D71B /* Local Notifications-Info.plist */,
-				FCA0FF251756922F0076D71B /* InfoPlist.strings */,
-				FCA0FF281756922F0076D71B /* main.m */,
-				FCA0FF2A1756922F0076D71B /* Local Notifications-Prefix.pch */,
+				FCA0FF2B1756922F0076D71B /* AppDelegate.h */,
+				FCA0FF2C1756922F0076D71B /* AppDelegate.m */,
 				FCA0FF2E1756922F0076D71B /* Default.png */,
 				FCA0FF301756922F0076D71B /* Default@2x.png */,
 				FCA0FF321756922F0076D71B /* Default-568h@2x.png */,
+				FCA0FF251756922F0076D71B /* InfoPlist.strings */,
+				FCA0FF241756922F0076D71B /* Local Notifications-Info.plist */,
+				FCA0FF2A1756922F0076D71B /* Local Notifications-Prefix.pch */,
+				FCA0FF281756922F0076D71B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			files = (
 				FCA0FF291756922F0076D71B /* main.m in Sources */,
 				FCA0FF2D1756922F0076D71B /* AppDelegate.m in Sources */,
+				FCA0FF53175692750076D71B /* NSLocalNotificationsScheduler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
