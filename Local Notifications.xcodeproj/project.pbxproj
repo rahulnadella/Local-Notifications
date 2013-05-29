@@ -20,7 +20,7 @@
 		FCA0FF3C1756922F0076D71B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA0FF1C1756922F0076D71B /* UIKit.framework */; };
 		FCA0FF3D1756922F0076D71B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA0FF1E1756922F0076D71B /* Foundation.framework */; };
 		FCA0FF451756922F0076D71B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCA0FF431756922F0076D71B /* InfoPlist.strings */; };
-		FCA0FF481756922F0076D71B /* Local_NotificationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA0FF471756922F0076D71B /* Local_NotificationsTests.m */; };
+		FCA0FF481756922F0076D71B /* LocalNotificationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA0FF471756922F0076D71B /* LocalNotificationsTests.m */; };
 		FCA0FF53175692750076D71B /* NSLocalNotificationsScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA0FF52175692750076D71B /* NSLocalNotificationsScheduler.m */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		FCA0FF3A1756922F0076D71B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FCA0FF421756922F0076D71B /* Local NotificationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Local NotificationsTests-Info.plist"; sourceTree = "<group>"; };
 		FCA0FF441756922F0076D71B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FCA0FF461756922F0076D71B /* Local_NotificationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Local_NotificationsTests.h; sourceTree = "<group>"; };
-		FCA0FF471756922F0076D71B /* Local_NotificationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Local_NotificationsTests.m; sourceTree = "<group>"; };
+		FCA0FF461756922F0076D71B /* LocalNotificationsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationsTests.h; sourceTree = "<group>"; };
+		FCA0FF471756922F0076D71B /* LocalNotificationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationsTests.m; sourceTree = "<group>"; };
 		FCA0FF51175692750076D71B /* NSLocalNotificationsScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLocalNotificationsScheduler.h; sourceTree = "<group>"; };
 		FCA0FF52175692750076D71B /* NSLocalNotificationsScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLocalNotificationsScheduler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,8 +141,8 @@
 		FCA0FF401756922F0076D71B /* Local NotificationsTests */ = {
 			isa = PBXGroup;
 			children = (
-				FCA0FF461756922F0076D71B /* Local_NotificationsTests.h */,
-				FCA0FF471756922F0076D71B /* Local_NotificationsTests.m */,
+				FCA0FF461756922F0076D71B /* LocalNotificationsTests.h */,
+				FCA0FF471756922F0076D71B /* LocalNotificationsTests.m */,
 				FCA0FF411756922F0076D71B /* Supporting Files */,
 			);
 			path = "Local NotificationsTests";
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA0FF481756922F0076D71B /* Local_NotificationsTests.m in Sources */,
+				FCA0FF481756922F0076D71B /* LocalNotificationsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

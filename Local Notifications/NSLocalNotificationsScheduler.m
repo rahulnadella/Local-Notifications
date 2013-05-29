@@ -22,7 +22,7 @@
  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  OTHER DEALINGS IN THE SOFTWARE.
  
- NSLocalNotificationScheduler.m
+ NSLocalNotificationsScheduler.m
  Local Notifications
  
  Created by Rahul Nadella on 5/28/13.
