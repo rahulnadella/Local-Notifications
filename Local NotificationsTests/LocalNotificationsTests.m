@@ -76,6 +76,8 @@
 {
     /* Schedule a Local Notification */
     [[NSLocalNotificationsScheduler sharedInstance] scheduleNotificationOn:self.currentDate text:self.titleMessage action:self.actionMessage sound:nil launchImage:nil andInfo:self.localNotificationDictionary andRepeatInterval:0];
+    STAssertEquals(1, [NSLocalNotificationsScheduler sharedInstance].badgeCount, @"Check the equality of badge count to verify the local notification fired");
+    
     /* Cancel the specific Notification */
     [[NSLocalNotificationsScheduler sharedInstance] cancelNotification:@"1"];
     /* Cancel All Notifications */
