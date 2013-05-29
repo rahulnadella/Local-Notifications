@@ -90,6 +90,7 @@
     STAssertNotNil(localNotification, @"Shared Instance is initialized");
     /* Clear Badge Count to 0 */
     [localNotification clearBadgeCount];
+    STAssertEquals(0, localNotification.badgeCount, @"Check the equality of badge count to verify the local notification has been cleared");
 }
 
 @end
