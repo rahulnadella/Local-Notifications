@@ -74,14 +74,12 @@
 
 - (void)testScheduleLocalNotification
 {
-    NSLocalNotificationsScheduler *localNotification = [NSLocalNotificationsScheduler sharedInstance];
-    STAssertNotNil(localNotification, @"Shared Instance is initialized");
     /* Schedule a Local Notification */
-    [localNotification scheduleNotificationOn:self.currentDate text:self.titleMessage action:self.actionMessage sound:nil launchImage:nil andInfo:self.localNotificationDictionary andRepeatInterval:0];
+    [[NSLocalNotificationsScheduler sharedInstance] scheduleNotificationOn:self.currentDate text:self.titleMessage action:self.actionMessage sound:nil launchImage:nil andInfo:self.localNotificationDictionary andRepeatInterval:0];
     /* Cancel the specific Notification */
-    [localNotification cancelNotification:@"1"];
+    [[NSLocalNotificationsScheduler sharedInstance] cancelNotification:@"1"];
     /* Cancel All Notifications */
-    [localNotification cancelAllNotifications];
+    [[NSLocalNotificationsScheduler sharedInstance] cancelAllNotifications];
 }
 
 - (void)testClearBadgeCount
