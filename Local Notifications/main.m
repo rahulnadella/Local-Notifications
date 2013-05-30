@@ -1,18 +1,18 @@
 //
 //  main.m
-//  Local Notifications
+//  Pythora
 //
-//  Created by Rahul Nadella on 5/29/13.
-//  Copyright (c) 2013 Rahul Nadella. All rights reserved.
+//  Created by Rahul Nadella on 5/30/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+#import "PythoraAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([PythoraAppDelegate class]));
     }
 }
