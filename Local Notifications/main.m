@@ -1,18 +1,16 @@
 //
 //  main.m
-//  Pythora
+//  Local Notifications
 //
-//  Created by Rahul Nadella on 5/30/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Rahul Nadella on 5/30/13.
 //
 
+#import "NSLocalNotificationsScheduler.h"
 #import <UIKit/UIKit.h>
-
-#import "PythoraAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([PythoraAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([NSLocalNotificationsScheduler class]));
     }
 }
