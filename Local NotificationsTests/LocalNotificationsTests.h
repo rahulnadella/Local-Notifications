@@ -31,7 +31,12 @@
 
 #import "NSLocalNotificationsScheduler.h"
 #import <SenTestingKit/SenTestingKit.h>
-
+/*
+ The LocalNotificationsTest interface for testing Local Notifications.
+ 
+ @since 1.0
+ @version 1.0
+ */
 @interface LocalNotificationsTests : SenTestCase
 
 @property (nonatomic, strong) NSDate *currentDate;

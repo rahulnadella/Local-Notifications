@@ -31,15 +31,39 @@
 
 #import <Foundation/Foundation.h>
 /*
- The NSLocalNotificationScheduler class is a singleton classes which are an important concept to understand because they exhibit an extremely useful design pattern. This idea is used throughout the iPhone SDK, for example, UIApplication has a method called sharedApplication which when called from anywhere will return the UIApplication instance which relates to the currently running application.
+ The NSLocalNotificationScheduler class is a singleton classes which are an important concept
+ to understand because they exhibit an extremely useful design pattern. This idea is used 
+ throughout the iPhone SDK, for example, UIApplication has a method called sharedApplication 
+ which when called from anywhere will return the UIApplication instance which relates to the 
+ currently running application.
  
- Instances of UILocalNotification represent notifications that an application can schedule for presentation to its users at specific dates and times. The operating system is responsible for delivering the notification at the proper time; the application does not have to be running for this to happen. Although local notifications are similar to remote notifications in that they are used for displaying alerts, playing sounds, and badging application icons, they are composed and delivered locally and do not require connection with remote servers.
+ Instances of UILocalNotification represent notifications that an application can schedule 
+ for presentation to its users at specific dates and times. The operating system is responsible 
+ for delivering the notification at the proper time; the application does not have to be running 
+ for this to happen. Although local notifications are similar to remote notifications in that 
+ they are used for displaying alerts, playing sounds, and badging application icons, they are 
+ composed and delivered locally and do not require connection with remote servers.
  
- Local notifications are primarily intended for applications with timer-based behaviors and simple calendar or to-do list applications. Applications that run in the allowed period in the background may also present a local notification, scheduled or immediate, to inform the user of an incoming message, chat, or update. An application can have only a limited number of scheduled notifications; the system keeps the soonest-firing 64 notifications (with automatically rescheduled notifications counting as a single notification) and discards the rest
+ Local notifications are primarily intended for applications with timer-based behaviors and 
+ simple calendar or to-do list applications. Applications that run in the allowed period in the 
+ background may also present a local notification, scheduled or immediate, to inform the user 
+ of an incoming message, chat, or update. An application can have only a limited number of 
+ scheduled notifications; the system keeps the soonest-firing 64 notifications (with 
+ automatically rescheduled notifications counting as a single notification) and discards the rest.
  
- When you create a local notification, you must specify when the system should deliver the notification. You can qualify this “fire date” (fireDate) with a time zone so that the fire date is adjusted when time-zone changes occur. You can also specify a repeat interval (daily, weekly, monthly, and so on). The substance of the notification can be an alert message or an application-icon badge number; you can also request that sound be played when alert messages are displayed. Local notifications can include custom data stored in a dictionary. Because UILocalNotification adopts the NSCopying protocol, you can copy existing local notifications and modify them to suit.
+ When you create a local notification, you must specify when the system should deliver the 
+ notification. You can qualify this “fire date” (fireDate) with a time zone so that the 
+ fire date is adjusted when time-zone changes occur. You can also specify a repeat 
+ interval (daily, weekly, monthly, and so on). The substance of the notification can be an 
+ alert message or an application-icon badge number; you can also request that sound be 
+ played when alert messages are displayed. Local notifications can include custom data 
+ stored in a dictionary. Because UILocalNotification adopts the NSCopying protocol, 
+ you can copy existing local notifications and modify them to suit.
  
- The NSLocalNotificationScheduler singleton class gives the ability to schedule local notifications based on a specific fire date, alert text, alert action, sound file, lauch image, user info, and repeat interval.  There is also several helper methods to manage the bagde count per notification, handle a notification when received by operating system, and cancel a specific notification.
+ The NSLocalNotificationScheduler singleton class gives the ability to schedule local notifications 
+ based on a specific fire date, alert text, alert action, sound file, lauch image, user info, 
+ and repeat interval.  There is also several helper methods to manage the bagde count per 
+ notification, handle a notification when received by operating system, and cancel a specific notification.
  
  @since 1.0
  @version 1.0
@@ -51,14 +75,21 @@
 
 @property int badgeCount;
 /*
- A sharedInstance is often implemented with the singleton pattern. Like in [UIApplication sharedApplication] -> There is only one application which you access through this singleton. The idea is to have one instance of a class which can be accessed by calling a class method, in objective-c commonly named sharedXXX. The sharedInstance class method provides an extremely powerful way to share data between different parts of code without having to pass the data around manually.
+ A sharedInstance is often implemented with the singleton pattern. 
+ Like in [UIApplication sharedApplication] -> There is only one application which you 
+ access through this singleton. The idea is to have one instance of a class which can 
+ be accessed by calling a class method, in objective-c commonly named sharedXXX. 
+ The sharedInstance class method provides an extremely powerful way to share data 
+ between different parts of code without having to pass the data around manually.
  
  @since 1.0
  */
 + (NSLocalNotificationsScheduler *) sharedInstance;
 
 /*
- The schedule notification on method provides the capability to schedule a UILocalNotification based on the fireDate, alertText, alertAction, soundfileName, launchImage, userInfo, and repeatInterval.
+ The schedule notification on method provides the capability to schedule a 
+ UILocalNotification based on the fireDate, alertText, alertAction, 
+ soundfileName, launchImage, userInfo, and repeatInterval.
  
  @since 1.0
  
@@ -86,7 +117,8 @@
               andRepeatInterval:(NSInteger)repeatInterval;
 
 /*
- The handle received notification method provides the ability to receive a UILocalNotification and process the result to the UI interface of the user.
+ The handle received notification method provides the ability to receive a 
+ UILocalNotification and process the result to the UI interface of the user.
  
  @since 1.0
  
@@ -106,14 +138,16 @@
 - (void)cancelNotification:(NSString *)localNotificationKey;
 
 /*
- The cancel all notifications method removes all local notifications from the current context.
+ The cancel all notifications method removes all local notifications from 
+ the current context.
  
  @since 1.0
  */
 - (void)cancelAllNotifications;
 
 /*
- The decrease badge count by method decreases the badge count by a specific number
+ The decrease badge count by method decreases the badge count by 
+ a specific number
  
  @since 1.0
  
