@@ -10,6 +10,6 @@ The NSLocalNotificationScheduler singleton class gives the ability to schedule l
 
 Usage
 -------------------
-	#import "NSLocalNotificationSchedular.h"    
+	#import "NSLocalNotificationScheduler.h"    
 
 	[[NSLocalNotificationsScheduler sharedInstance] scheduleNotificationOn:refillAlertDate text:text action:action sound:currentRefillRemainderAlertSound launchImage:nil andInfo:localNotificationDictionary andRepeatInterval:0];
