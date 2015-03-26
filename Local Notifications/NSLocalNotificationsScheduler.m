@@ -152,6 +152,9 @@ static NSLocalNotificationsScheduler *_instance;
 
 - (void)handleReceivedNotification:(UILocalNotification*) thisNotification
 {
+#if DEBUG
+    NSLog(@"Received: %@",[thisNotification description]);
+#endif
 	[self decreaseBadgeCountBy:1];
 }
 
