@@ -9,7 +9,7 @@ The NSLocalNotificationScheduler class is a singleton classes which are an impor
 The NSLocalNotificationScheduler singleton class gives the ability to schedule local notifications based on a specific fire date, alert text, alert action, sound file, lauch image, user info, and repeat interval.  There is also several helper methods to manage the bagde count per notification, handle a notification when received by operating system, and cancel a specific notification.
 
 #####Version
->Version 1.0 - Design and Implementation of the ObjectFactory
+>Version 1.0 - Design and Implementation of the Local Notifications
 
 Usage
 -------------------
