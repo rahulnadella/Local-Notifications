@@ -11,7 +11,8 @@ The NSLocalNotificationScheduler singleton class gives the ability to schedule l
 #####Version
 >Version 1.0 - Design and Implementation of the Local Notifications
 
->Build (Master) - Works on iOS 5.0 or greater
+#####Build
+>Master -> Only works on iOS 5.0 or greater
 
 Usage
 -------------------
